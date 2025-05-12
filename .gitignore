@@ -1,3 +1,5 @@
+#vs files
+.vs
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -128,6 +130,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+moviesprojectvenv/
 .env
 .venv
 env/
