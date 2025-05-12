@@ -1,0 +1,6 @@
+.bg-index {
+    background: url("../images/background.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
