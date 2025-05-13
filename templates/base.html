@@ -26,19 +26,44 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .navbar-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding-right: 5px;
+            margin-left: auto;
+            
+            
+        }
+        .navbar .navbar-links li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+
+        }
+
+    </style>
+
 <body>
 
     <!-- Header / Content Block -->
      <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About us</a></li>
                 <li><a href="">Cart</a></li>
                 <li><a href="">Movies</a></li>
             </ul>
         </nav>
+      
      </header>
     <main>
         {% block content %}
