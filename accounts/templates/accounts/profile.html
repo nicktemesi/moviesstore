@@ -1,0 +1,24 @@
+{%extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Profile</h2>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>First Name: {{ user.first_name }}</p>
+    <p>Last Name: {{ user.last_name }}</p>
+
+    <h3>Your Movies</h3>
+    {% if movies %}
+            <ul>
+            {% for movie in movies %}
+                <li>{{ movie.title }} ({{ movie.release_date }})</li>
+            {% endfor %}
+            </ul>
+    {% else %}
+        <p>You have no movies in your collection.</p>
+    {% endif %}
+
+    <a href="{% url 'accounts:edit_profile' %}">Edit Profile</a>
+    <a href="{% url 'accounts:logout' %}">Logout</a>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ block.super }} - Register Done
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1 class="text-success">Registration Successful</h1>
+    <i class="fa fa-check-circle fa-3x text-success"></i>
+    <p class="lead">Thank you for registering! You can now log in to your account.</p>
+    <a class="btn btn-primary mt-3" href="{% url 'accounts:login' %}">Log in</a>
+</div>
+
+{% endblock %}
