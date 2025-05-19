@@ -11,3 +11,4 @@ urlpatterns = [
     path('register_done/', views.register_done, name='register_done'),
     path('edit_profile/', views.edit_profile, name='edit_profile'),
 ]
+
