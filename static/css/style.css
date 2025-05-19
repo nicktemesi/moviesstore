@@ -30,22 +30,61 @@ a {
 }
 
 /*------------------------------------
-  ALL OUR NAVIGATION STYLES HERE
+  NAVIGATION STYLES
 ------------------------------------*/
 .navbar a.nav-link {
     color: #FFFEF6 !important;
 }
 
 /*------------------------------------
-  ALL OUR FOOTER STYLES HERE
+  FOOTER STYLES
 ------------------------------------*/
 footer {
-    background-color: black;
     width: 100%;
     position: fixed;
     bottom: 0;
 }
 
+/* Main footer top section */
+.ms-footer {
+    background-color: #202020;
+}
+
+    .ms-footer p {
+        color: #7F7F7F;
+        font-size: 13px;
+    }
+
+    .ms-footer a {
+        font-size: 13px;
+        color: white;
+    }
+
+        .ms-footer a:hover {
+            color: #6ab43e;
+            text-decoration: none;
+        }
+
+/* Footer bottom section which has developer credit*/
+.ms-footer-bottom {
+    background-color: #2E2E2E;
+}
+
+    .ms-footer-bottom span {
+        font-size: 13px;
+        line-height: 38px;
+    }
+
+    .ms-footer-bottom a {
+        color: #6ab43e;
+        text-decoration: none;
+    }
+
+        .ms-footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+/* Footer layout elements */
 .footer_cont {
     width: 100%;
     padding: 10px;
@@ -63,6 +102,7 @@ footer {
         list-style-type: none;
     }
 
+/* Social media icons */
 .socialmedia_icons {
     display: flex;
     align-items: center;
@@ -93,6 +133,7 @@ footer {
             text-align: center;
         }
 
+/* Copyright */
 .copyright p {
     text-align: center;
     color: white;
