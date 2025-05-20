@@ -20,9 +20,50 @@ a {
   BACKGROUND STYLES
 ------------------------------------*/
 .bg-index {
-    background: url("../images/background.jpg") no-repeat fixed;
+    background: url("../images/about.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
+}
+
+nav {
+    background: rgba(34, 34, 34, 0.95);
+    padding: 0.75rem 2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #ff9800;
+    color: #222;
+    text-decoration: none;
 }
 
 .bg-dark {
@@ -139,3 +180,4 @@ footer {
     color: white;
     background-color: rgb(39, 37, 37);
 }
+
