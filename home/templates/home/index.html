@@ -1,11 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
 <header class="masthead bg-index text-white text-center py-4">
     <div class="container d-flex align-items-center flex-column pt-2">
         <h2>Movies Store</h2>
         <p>Your Ticket to Unlimited Entertainment!</p>
     </div>
+    <div class =''>
+
+        <button class="btn btn-primary btn-lg" type="button" onclick="location.href='{% url 'accounts:login' %}'">Login</button>
+        <button class="btn btn-primary btn-lg" type="button" onclick="location.href='{% url 'accounts:register' %}'">Register</button>
+        {% if user.is_authenticated %}
+        <button class="btn btn-primary btn-lg" type="button" onclick="location.href='{% url 'accounts:logout' %}'">Logout</button>
+        {% endif %}
+    </div>
+  
 </header>
 
 <div class="p-3">

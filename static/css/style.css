@@ -1,3 +1,24 @@
+/*------------------------------------
+  GLOBAL STYLES
+------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+    a:hover {
+        color: rgb(191, 189, 189);
+    }
+
+/*------------------------------------
+  BACKGROUND STYLES
+------------------------------------*/
 .bg-index {
     background: url("../images/about.jpg") no-repeat fixed;
     background-size: cover;
@@ -43,5 +64,120 @@ nav ul li a:focus {
     background: #ff9800;
     color: #222;
     text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #2E2E2E !important;
+}
+
+/*------------------------------------
+  NAVIGATION STYLES
+------------------------------------*/
+.navbar a.nav-link {
+    color: #FFFEF6 !important;
+}
+
+/*------------------------------------
+  FOOTER STYLES
+------------------------------------*/
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Main footer top section */
+.ms-footer {
+    background-color: #202020;
+}
+
+    .ms-footer p {
+        color: #7F7F7F;
+        font-size: 13px;
+    }
+
+    .ms-footer a {
+        font-size: 13px;
+        color: white;
+    }
+
+        .ms-footer a:hover {
+            color: #6ab43e;
+            text-decoration: none;
+        }
+
+/* Footer bottom section which has developer credit*/
+.ms-footer-bottom {
+    background-color: #2E2E2E;
+}
+
+    .ms-footer-bottom span {
+        font-size: 13px;
+        line-height: 38px;
+    }
+
+    .ms-footer-bottom a {
+        color: #6ab43e;
+        text-decoration: none;
+    }
+
+        .ms-footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+/* Footer layout elements */
+.footer_cont {
+    width: 100%;
+    padding: 10px;
+}
+
+.footer_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+    .footer_nav ul li {
+        list-style-type: none;
+    }
+
+/* Social media icons */
+.socialmedia_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .socialmedia_icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        margin: 0 10px;
+        background-color: rgb(136, 114, 114);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+    }
+
+        .socialmedia_icons a:hover {
+            opacity: 1;
+        }
+
+        .socialmedia_icons a i {
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+/* Copyright */
+.copyright p {
+    text-align: center;
+    color: white;
+    background-color: rgb(39, 37, 37);
 }
 
